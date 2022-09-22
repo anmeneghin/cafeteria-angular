@@ -1,0 +1,37 @@
+<div class="conteudo">
+    <header class="header_section">
+        <div class="container-navbar">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="navbar-nav">
+                        <div class="nav-item">
+                            <a class="nav-link" routerLink="/cafes">Cafés</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" routerLink="/sobre">Sobre nós</a>
+                        </div>
+                        <div class="nav-item">
+                            <a class="nav-link" routerLink="/contatos">Contatos</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="logo" routerLink="/home">
+                <img src="./../../assets/images/logo-cafe.svg" alt="Logo-Cafe" />
+            </div>
+            <div class="row pesquisa">
+                <div class="col-md-10">
+                    <div class="form-group form-inline justify-content-between">
+                        <i class="fas fa-search"></i>
+                        <!-- Input Campo busca/filtro -->
+                        <input class="form-control" type="seach" name="searchTerm" #campoBusca />
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <a class="compras"><i class="fa-solid fa-mug-hot"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <router-outlet></router-outlet>
+</div>

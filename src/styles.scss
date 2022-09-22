@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+body {
+    height: 100%;
+    font-size: 14px;
+    font-family: "Mulish";
+}
+
+@font-face {
+    font-family: "Mulish";
+    src: url("./assets/fontes/Mulish-Regular.ttf");
+}
