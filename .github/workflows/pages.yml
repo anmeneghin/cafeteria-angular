@@ -45,7 +45,7 @@ jobs:
         uses: actions/configure-pages@v2
       
       - name: Copy index.html to 404.html
-      - run: cp ./dist/index.html ./dist/404.html
+        run: cp ./dist/index.html ./dist/404.html
         
       - name: Build with Jekyll
         uses: actions/jekyll-build-pages@v1
