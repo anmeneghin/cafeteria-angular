@@ -6,15 +6,19 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from '@app/navbar/navbar.component';
 import { HomeComponent } from '@app/home/home.component';
 import { CafesComponent } from '@app/cafes/cafes.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbActiveOffcanvas, NgbOffcanvas } from '@ng-bootstrap/ng-bootstrap';
 import { ClipboardModule } from 'ngx-clipboard';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { SidebarComprasComponent } from './sidebar-compras/sidebar-compras.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     HomeComponent,
-    CafesComponent
+    CafesComponent,
+    SidebarComponent,
+    SidebarComprasComponent
   ],
   imports: [
     BrowserModule,

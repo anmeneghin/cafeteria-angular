@@ -2,6 +2,9 @@
     <header class="header_section">
         <div class="container-navbar">
             <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <div class="btn-navbar">
+                    <a class="navbar" (click)="open()"><i class="fas fa-bars"></i></a>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <div class="navbar-nav">
                         <div class="nav-item">
@@ -28,8 +31,11 @@
                     </div>
                 </div>
                 <div class="col-md-2">
-                    <a class="compras"><i class="fa-solid fa-mug-hot"></i></a>
+                    <a class="compras" (click)="openEnd()"><i class="fa-solid fa-mug-hot"></i></a>
                 </div>
+            </div>
+            <div class="mobile-carrinho">
+                <a class="compras" (click)="openEnd()"><i class="fa-solid fa-mug-hot"></i></a>
             </div>
         </div>
     </header>
