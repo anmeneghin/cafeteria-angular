@@ -1,11 +1,29 @@
-<div class="offcanvas-header">
-    <h5 class="offcanvas-title">Offcanvas</h5>
-    <button type="button" class="btn-close text-reset" aria-label="Close"
-        (click)="activeOffcanvas.dismiss('Cross click')"></button>
-</div>
-<div class="offcanvas-body">
-    <div>
-        Hello
+<div class="sidebar">
+    <div class="offcanvas-header">
+        <h1 class="offcanvas-title">Sweet Coffee</h1>
+        <button type="button" class="btn-close text-reset" aria-label="Close"
+            (click)="activeOffcanvas.dismiss('Cross click')"><i class="fas fa-times"></i></button>
     </div>
-    <button type="button" class="btn btn-outline-dark" (click)="activeOffcanvas.close('Close click')">Close</button>
+    <div class="offcanvas-body">
+        <ul class="nav-list">
+            <li>
+                <a routerLink="/cafes">
+                    <i class="fas fa-home"></i>
+                    <span class="links_name">Cafés</span>
+                </a>
+            </li>
+            <li>
+                <a routerLink="/sobre">
+                    <i class="fas fa-home"></i>
+                    <span class="links_name">Sobre nós</span>
+                </a>
+            </li>
+            <li>
+                <a routerLink="/contatos">
+                    <i class="fas fa-home"></i>
+                    <span class="links_name">Contatos</span>
+                </a>
+            </li>
+        </ul>
+    </div>
 </div>

@@ -1,0 +1,30 @@
+::ng-deep .offcanvas {
+    padding: 20px;
+    background-color: #252120 !important;
+}
+
+.sidebar {
+    .offcanvas-header {
+        padding: 0;
+        .offcanvas-title {
+            color: white;
+            font-family: "Moonbright";
+        }
+        .btn-close {
+            box-sizing: content-box;
+            width: 1em;
+            height: 1em;
+            padding: 0.25em 0.25em;
+            color: white !important;
+            background: none;
+            border: 0;
+            border-radius: 0.375rem;
+            opacity: 1;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .offcanvas-body {
+        padding: 20px 0;
+    }
+}
